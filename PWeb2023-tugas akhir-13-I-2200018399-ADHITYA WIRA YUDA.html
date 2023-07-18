@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tugas Akhir PWEB</title>
+	<link rel="stylesheet" type="text/css" href="forDisplay.css">
+</head>
+<body>
+	<p align="center" id="tanggal" onsubmit=""></p>
+	<header></header>
+	<div id="content">
+		<div id="side-left">
+			<table cellspacing="15">
+				<tr>
+					<td id="font" colspan="5" bgcolor="darkgreen">DAFTAR FILM </td>
+				</tr>
+				<tr>
+					<td><img src="black.jpg"></td>
+					<td><img src="flas.jpg"></td>
+					<td><img src="film.jpg"></td>
+					<td><img src="fastx.jpg"></td>
+					<td><img src="kkn.jpg"></td>
+				</tr>
+				<tr>
+					<td><img src="alena.jpg"></td>
+					<td><img src="kutukan.jpg"></td>
+					<td><img src="film1.jpg"></td>
+					<td><img src="maghrib.jpg"></td>
+					<td><img src="gatotkaca.jpg"></td>
+				</tr>
+				<tr>
+					<td><img src="spirit.jpg"></td>
+					<td><img src="sriasih.jpg"></td>
+					<td><img src="venom.jpg"></td>
+					<td><img src="ghost.jpg"></td>
+					<td><img src="cektoko.jpg"></td>
+				</tr>
+			</table>
+		</div>
+		<div id="side-right"><br><br>
+			<p id="font">REGIST</p>
+			<form action="form.php" method="POST" id="corner">
+				Film :<br>
+				<select name="vfilm">
+					<option selected disabled>Select</option>
+					<option>fastx</option>
+					<option>kkn desa penari</option>
+					<option>the flas</option>
+					<option>venom</option>
+					<option>cek toko sebelah</option>
+					<option>alena</option>
+					<option>wakanda forever</option>
+					<option>maghrib</option>
+					<option>sriasih</option>
+					<option>kutukan</option>
+				</select><br>
+				Cinema :<br>
+				<select name="vcinema">
+					<option selected disabled>Select</option>
+					<option>Lippo Plaza</option>
+					<option>Ambarukmo Plaza</option>
+					<option>Sleman City Hall</option>
+				</select><br>
+				People :
+				<input type="number" name="vpeople">
+				<br>
+				Date : <br>
+				<input type="date" name="vdate"><br>
+				Time :<br>
+				<select name="vtime">
+					<option selected disabled>Select</option>
+					<option>08:00</option>
+					<option>12:30</option>
+					<option>19:35</option>
+					<option>20:00</option>
+					<option>21.30</option>
+				</select>
+				<button>Pay</button>
+			</form>
+		</div>
+		<div id="footer">
+			<p>
+				copyright <a href="#">ADHITYA WIRA YUDA / 2200018399</a>. Allright reserved.
+			</p>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var a = new Date();
+		document.getElementById("tanggal").innerHTML = a;
+	</script>
+</body>
+</html>
